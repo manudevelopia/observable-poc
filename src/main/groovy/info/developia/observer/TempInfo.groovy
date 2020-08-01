@@ -13,7 +13,7 @@ class TempInfo {
 
     static TempInfo fetch(String town) {
         if (random.nextInt(10) == 0) {
-            throw new RuntimeException('Error!')
+            throw new RuntimeException("Error fetching temperature from $town!")
         }
         return new TempInfo(town, random.nextInt(100))
     }

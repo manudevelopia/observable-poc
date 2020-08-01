@@ -25,7 +25,6 @@ class TempSubscription implements Flow.Subscription {
                     subscriber.onNext(TempInfo.fetch(town))
                 } catch (Exception e) {
                     subscriber.onError(e)
-                    break
                 }
             }
         })
